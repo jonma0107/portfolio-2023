@@ -1,0 +1,149 @@
+/*----------------------------------------------------------*/
+/*-------------------- General Styles ----------------------*/
+/*----------------------------------------------------------*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+@font-face {
+  font-family: Motorblock;
+  src: url(fonts/Motorblock.ttf);
+}
+
+@font-face {
+  font-family: Genesys;
+  src: url(fonts/Genesys.ttf);
+}
+
+@font-face {
+  font-family: NeueMachina-Regular;
+  src: url(fonts/NeueMachina-Regular.otf);
+}
+
+
+/*----------------------------------------------------------*/
+/*---------------------- NAVEGATION ------------------------*/
+/*----------------------------------------------------------*/
+
+.navbar {
+  padding: 1rem;
+  background-color: #f5f6f7;
+  font-family: Genesys;
+  font-size: 20px;
+}
+
+.navbar-collapse {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-brand img {
+  border-radius: 50%;
+  margin-left: 15px;
+}
+
+.nav-link {
+  margin: 15px;
+}
+
+/*----------------------------------------------------------*/
+/*---------------------- SECTION HERO ----------------------*/
+/*----------------------------------------------------------*/
+
+.hero {
+  background-color: #f5f6f7;
+  min-height: 450px;
+  text-align: center;
+  font-family: Motorblock;
+}
+
+.hero-imagen-desarrollador {
+  max-width: 200px;
+  /* width: 200px;
+  height: 200px; */
+  /* border-radius: 50%; */
+  padding: 10px;
+}
+
+.hero-principal {
+  padding: 3rem;
+}
+
+.typed {
+  color: rgb(6, 87, 6);
+}
+
+/*----------------------------------------------------------*/
+/*------------------------ ABOUT ME ------------------------*/
+/*----------------------------------------------------------*/
+.dark-section {
+  background-color: #1b1b32;
+  color: #fff;
+}
+
+.about-me {
+  height: 500px;
+  padding: 10px;
+}
+
+.title-section {
+  font-size: 2rem;
+  font-family: NeueMachina-Regular;
+  text-align: center;
+  padding: 15PX 0;
+}
+
+.about-me .text-section {
+  max-width: 600px;
+  font-family: NeueMachina-Regular;
+  text-align: justify;
+}
+
+/*----------------------------------------------------------*/
+/*---------------------- RESPONSIVE ------------------------*/
+/*----------------------------------------------------------*/
+
+@media (max-width: 768px) {
+  .navbar-brand {
+    display: none;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .hero-inferior-imagen {
+    max-width: 600px;
+  }
+
+}
+
+@media (min-width: 280px) and (max-width: 715px) {
+  .typed, .activity {
+    display: none;
+  }
+}
+
+@media (max-width: 445px) {
+  .contenedor {
+    overflow-y: scroll;
+    overflow-wrap: normal;
+  }
+
+  .text-section {
+    margin: 0 10px;
+  }
+}
