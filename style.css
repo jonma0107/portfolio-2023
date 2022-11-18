@@ -128,7 +128,7 @@ h1 {
 
 
 .experiencia {
-  padding: 40px 40px 60px 40px;
+  padding: 40px 0px 60px 0px;
   font-family: NeueMachina-Regular;
 }
 
@@ -228,7 +228,7 @@ h1 {
 
 @media (max-width: 768px) {
   button.navbar-toggler {
-    margin: 0 15px;
+    margin: 0 0 0 15px;
   }
 }
 
