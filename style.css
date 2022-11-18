@@ -224,7 +224,7 @@ h1 {
 
 @media (max-width: 768px) {
   button.navbar-toggler {
-    margin: 0 50px;
+    margin: 0 10px;
   }
 }
 
@@ -259,6 +259,7 @@ h1 {
   .columna:nth-child(1),
   .columna:nth-child(2),
   .columna:nth-child(3) {
-    clip-path: circle(40% at top left);
+    clip-path: circle(40% at top);
+    color: #000;
   }
 }
