@@ -2,10 +2,19 @@
 /*-------------------- General Styles ----------------------*/
 /*----------------------------------------------------------*/
 
-* {
+/* * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+} */
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 section {
@@ -36,7 +45,7 @@ h1 {
 
 
 /*----------------------------------------------------------*/
-/*---------------------- NAVEGATION ------------------------*/
+/*---------------------- NAVIGATION ------------------------*/
 /*----------------------------------------------------------*/
 
 .navbar {
@@ -114,12 +123,108 @@ h1 {
 }
 
 /*----------------------------------------------------------*/
+/*----------------------- EXPERIENCE -----------------------*/
+/*----------------------------------------------------------*/
+
+
+.experiencia {
+  padding: 40px 40px 60px 40px;
+  font-family: NeueMachina-Regular;
+}
+
+.light-section {
+  color: #000;
+  background-color: #fff;
+}
+
+.experiencia-titulo {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.experiencia i {
+  font-size: 2.5rem;
+  color: #7ade30;
+  background-color: #0a0a23;
+  padding: 8px 16px;
+  border-radius: 50%;
+}
+
+.badges-contenedor {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.badge {
+  margin: 5px;
+}
+
+.columna:nth-child(1) {
+  clip-path: circle(40% at top);
+}
+
+.columna:nth-child(2) {
+  clip-path: circle(40% at top);
+}
+
+.columna:nth-child(3) {
+  clip-path: circle(40% at top);
+}
+
+.capa {
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.experiencia .columna {
+  padding: 20px;
+  border: 2px solid #8080804d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+  /* clip-path: circle(50% at top left); */
+  transition-property: clip-path, background-color;
+  transition-duration: 2s;
+  /* transition: all 0.2s ease-in; */
+}
+
+
+.columna:nth-child(1):hover {
+  clip-path: circle(150% at bottom);
+  background: none;
+  color: #000;
+}
+
+.columna:nth-child(2):hover {
+  clip-path: circle(150% at bottom);
+  background: none;
+  color: #000;
+}
+
+.columna:nth-child(3):hover {
+  clip-path: circle(150% at bottom);
+  background: none;
+  color: #000;
+}
+
+
+
+/*----------------------------------------------------------*/
 /*---------------------- RESPONSIVE ------------------------*/
 /*----------------------------------------------------------*/
 
 @media (max-width: 768px) {
   .navbar-brand {
     display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  button.navbar-toggler {
+    margin: 0 50px;
   }
 }
 
@@ -145,5 +250,15 @@ h1 {
 
   .text-section {
     margin: 0 10px;
+  }
+}
+
+
+@media (max-width: 986px) {
+
+  .columna:nth-child(1),
+  .columna:nth-child(2),
+  .columna:nth-child(3) {
+    clip-path: circle(40% at top left);
   }
 }
