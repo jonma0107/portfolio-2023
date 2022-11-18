@@ -163,18 +163,22 @@ h1 {
 
 .columna:nth-child(1) {
   clip-path: circle(40% at top);
+  color: #000;
 }
 
 .columna:nth-child(2) {
   clip-path: circle(40% at top);
+  color: #000;
 }
 
 .columna:nth-child(3) {
   clip-path: circle(40% at top);
+  color: #000;
 }
 
 .capa {
   background-color: rgba(0, 0, 0, 1);
+  color: #000;
 }
 
 .experiencia .columna {
