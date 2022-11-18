@@ -191,7 +191,7 @@ h1 {
 
   /* clip-path: circle(50% at top left); */
   transition-property: clip-path, background-color;
-  transition-duration: 2s;
+  transition-duration: 1.5s;
   /* transition: all 0.2s ease-in; */
 }
 
@@ -270,6 +270,6 @@ h1 {
   .columna:nth-child(2),
   .columna:nth-child(3) {
     clip-path: circle(40% at top);
-    color: #000;
+
   }
 }
