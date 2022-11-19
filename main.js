@@ -3,7 +3,7 @@ const typed = new Typed('.typed', {
     [
       'Programador de Software',
       'Desarrollador Web',
-      'y Aplicaciones MÓviles'],
+      'Desarrollador MÓvil'],
 
   // stringsElement: '#cadenas-texto', // ID del elemento que contiene cadenas de texto a mostrar.
   typeSpeed: 75, // Velocidad en mlisegundos para poner una letra,
