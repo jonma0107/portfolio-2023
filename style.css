@@ -128,7 +128,7 @@ h1 {
 
 
 .experiencia {
-  padding: 40px 30px 60px 30px;
+  padding: 40px 20px 60px 20px;
   font-family: NeueMachina-Regular;
 }
 
@@ -263,20 +263,59 @@ h1 {
 }
 
 
-@media (min-width: 820px) and (max-width: 1046px) {
+@media (min-width: 820px) and (max-width: 932px) {
 
   .columna:nth-child(1) {
-    clip-path: circle(60% at top left);
+    clip-path: circle(25% at top);
     color: transparent;
   }
 
   .columna:nth-child(2) {
-    clip-path: circle(60% at top);
+    clip-path: circle(25% at top);
     color: transparent;
   }
 
   .columna:nth-child(3) {
-    clip-path: circle(60% at top right);
+    clip-path: circle(25% at top);
+    color: transparent;
+
+  }
+}
+
+@media (min-width: 932px) and (max-width: 1046px) {
+
+  .columna:nth-child(1) {
+    clip-path: circle(36% at top);
+    color: transparent;
+  }
+
+  .columna:nth-child(2) {
+    clip-path: circle(36% at top);
+    color: transparent;
+  }
+
+  .columna:nth-child(3) {
+    clip-path: circle(36% at top);
+    color: transparent;
+
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 820px) {
+
+  .columna:nth-child(1) {
+    clip-path: circle(50% at top left);
+    color: transparent;
+  }
+
+  .columna:nth-child(2) {
+    clip-path: circle(50% at top left);
+    color: transparent;
+  }
+
+  .columna:nth-child(3) {
+    clip-path: circle(50% at top left);
     color: transparent;
 
   }
