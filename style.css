@@ -163,22 +163,21 @@ h1 {
 
 .columna:nth-child(1) {
   clip-path: circle(40% at top);
-  color: #000;
+  color: transparent;
 }
 
 .columna:nth-child(2) {
   clip-path: circle(40% at top);
-  color: #000;
+  color: transparent;
 }
 
 .columna:nth-child(3) {
   clip-path: circle(40% at top);
-  color: #000;
+  color: transparent;
 }
 
 .capa {
   background-color: rgba(0, 0, 0, 1);
-  color: #000;
 }
 
 .experiencia .columna {
@@ -264,12 +263,13 @@ h1 {
 }
 
 
-@media (max-width: 986px) {
+@media (min-width: 820px) and (max-width: 1046px) {
 
   .columna:nth-child(1),
   .columna:nth-child(2),
   .columna:nth-child(3) {
-    clip-path: circle(40% at top);
+    clip-path: circle(60% at top left);
+    color: transparent;
 
   }
 }
