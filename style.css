@@ -265,10 +265,18 @@ h1 {
 
 @media (min-width: 820px) and (max-width: 1046px) {
 
-  .columna:nth-child(1),
-  .columna:nth-child(2),
-  .columna:nth-child(3) {
+  .columna:nth-child(1) {
     clip-path: circle(60% at top left);
+    color: transparent;
+  }
+
+  .columna:nth-child(2) {
+    clip-path: circle(60% at top);
+    color: transparent;
+  }
+
+  .columna:nth-child(3) {
+    clip-path: circle(60% at top right);
     color: transparent;
 
   }
