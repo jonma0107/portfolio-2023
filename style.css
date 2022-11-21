@@ -5,6 +5,8 @@
 /* apply a natural box layout model to all elements, but allowing components to change */
 *, *::before, *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 section {
@@ -263,7 +265,7 @@ h1 {
 
 /* meet me */
 
-@media (max-width: 445px) {
+@media (max-width: 502px) {
   /* .about-me {
     height: 300px;
   }
@@ -349,7 +351,35 @@ h1 {
 
 /* experience */
 
+@media (max-width: 472px) {
+
+  .experiencia {
+    padding: 20px 20px 60px 20px;
+    font-family: NeueMachina-Regular;
+  }
+
+  .columna:nth-child(1) {
+    clip-path: circle(30% at top);
+    color: transparent;
+  }
+
+  .columna:nth-child(2) {
+    clip-path: circle(30% at top);
+    color: transparent;
+  }
+
+  .columna:nth-child(3) {
+    clip-path: circle(30% at top);
+    color: transparent;
+
+  }
+}
+
 @media (min-width: 768px) and (max-width: 820px) {
+  .experiencia {
+    padding: 20px 20px 60px 20px;
+    font-family: NeueMachina-Regular;
+  }
 
   .columna:nth-child(1) {
     clip-path: circle(45% at top left);
@@ -375,6 +405,11 @@ h1 {
 
 @media (min-width: 820px) and (max-width: 844px) {
 
+  .experiencia {
+    padding: 20px 20px 60px 20px;
+    font-family: NeueMachina-Regular;
+  }
+
   .columna:nth-child(1) {
     clip-path: circle(25% at top);
     color: transparent;
@@ -394,6 +429,11 @@ h1 {
 
 @media (min-width: 844px) and (max-width: 1102px) {
 
+  .experiencia {
+    padding: 20px 20px 60px 20px;
+    font-family: NeueMachina-Regular;
+  }
+
   .columna:nth-child(1) {
     clip-path: circle(30% at top);
     color: transparent;
@@ -409,4 +449,6 @@ h1 {
     color: transparent;
 
   }
+
+
 }
