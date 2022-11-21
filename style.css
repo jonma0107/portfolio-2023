@@ -263,6 +263,110 @@ h1 {
   }
 }
 
+
+
+/* experience */
+
+@media (min-width: 309px) and (max-width: 472px) {
+
+  .experiencia {
+    padding: 20px 20px 60px 20px;
+    font-family: NeueMachina-Regular;
+  }
+
+  .columna:nth-child(1) {
+    clip-path: circle(30% at 50% 0%);
+    color: transparent;
+  }
+
+  .columna:nth-child(2) {
+    clip-path: circle(30% at 50% 0%);
+    color: transparent;
+  }
+
+  .columna:nth-child(3) {
+    clip-path: circle(30% at 50% 0%);
+    color: transparent;
+
+  }
+}
+
+@media (min-width: 768px) and (max-width: 820px) {
+  .experiencia {
+    padding: 20px 20px 60px 20px;
+    font-family: NeueMachina-Regular;
+  }
+
+  .columna:nth-child(1) {
+    clip-path: circle(45% at top left);
+    color: transparent;
+    text-align: center;
+
+  }
+
+  .columna:nth-child(2) {
+    clip-path: circle(45% at top left);
+    color: transparent;
+    text-align: center;
+  }
+
+  .columna:nth-child(3) {
+    clip-path: circle(45% at top left);
+    color: transparent;
+    text-align: center;
+
+  }
+}
+
+
+@media (min-width: 820px) and (max-width: 844px) {
+
+  .experiencia {
+    padding: 20px 20px 60px 20px;
+    font-family: NeueMachina-Regular;
+  }
+
+  .columna:nth-child(1) {
+    clip-path: circle(28% at top);
+    color: transparent;
+  }
+
+  .columna:nth-child(2) {
+    clip-path: circle(28% at top);
+    color: transparent;
+  }
+
+  .columna:nth-child(3) {
+    clip-path: circle(28% at top);
+    color: transparent;
+
+  }
+}
+
+@media (min-width: 844px) and (max-width: 1102px) {
+
+  .experiencia {
+    padding: 20px 20px 60px 20px;
+    font-family: NeueMachina-Regular;
+  }
+
+  .columna:nth-child(1) {
+    clip-path: circle(30% at top);
+    color: transparent;
+  }
+
+  .columna:nth-child(2) {
+    clip-path: circle(30% at top);
+    color: transparent;
+  }
+
+  .columna:nth-child(3) {
+    clip-path: circle(30% at top);
+    color: transparent;
+
+  }
+}
+
 /* meet me */
 
 @media (max-width: 584px) {
@@ -347,108 +451,4 @@ h1 {
   .text-section:has(+ .expand-btn:checked) {
     max-height: none;
   }
-}
-
-/* experience */
-
-@media (max-width: 472px) {
-
-  .experiencia {
-    padding: 20px 20px 60px 20px;
-    font-family: NeueMachina-Regular;
-  }
-
-  .columna:nth-child(1) {
-    clip-path: circle(30% at top);
-    color: transparent;
-  }
-
-  .columna:nth-child(2) {
-    clip-path: circle(30% at top);
-    color: transparent;
-  }
-
-  .columna:nth-child(3) {
-    clip-path: circle(30% at top);
-    color: transparent;
-
-  }
-}
-
-@media (min-width: 768px) and (max-width: 820px) {
-  .experiencia {
-    padding: 20px 20px 60px 20px;
-    font-family: NeueMachina-Regular;
-  }
-
-  .columna:nth-child(1) {
-    clip-path: circle(45% at top left);
-    color: transparent;
-    text-align: center;
-
-  }
-
-  .columna:nth-child(2) {
-    clip-path: circle(45% at top left);
-    color: transparent;
-    text-align: center;
-  }
-
-  .columna:nth-child(3) {
-    clip-path: circle(45% at top left);
-    color: transparent;
-    text-align: center;
-
-  }
-}
-
-
-@media (min-width: 820px) and (max-width: 844px) {
-
-  .experiencia {
-    padding: 20px 20px 60px 20px;
-    font-family: NeueMachina-Regular;
-  }
-
-  .columna:nth-child(1) {
-    clip-path: circle(25% at top);
-    color: transparent;
-  }
-
-  .columna:nth-child(2) {
-    clip-path: circle(25% at top);
-    color: transparent;
-  }
-
-  .columna:nth-child(3) {
-    clip-path: circle(25% at top);
-    color: transparent;
-
-  }
-}
-
-@media (min-width: 844px) and (max-width: 1102px) {
-
-  .experiencia {
-    padding: 20px 20px 60px 20px;
-    font-family: NeueMachina-Regular;
-  }
-
-  .columna:nth-child(1) {
-    clip-path: circle(30% at top);
-    color: transparent;
-  }
-
-  .columna:nth-child(2) {
-    clip-path: circle(30% at top);
-    color: transparent;
-  }
-
-  .columna:nth-child(3) {
-    clip-path: circle(30% at top);
-    color: transparent;
-
-  }
-
-
 }
