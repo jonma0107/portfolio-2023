@@ -2,19 +2,9 @@
 /*-------------------- General Styles ----------------------*/
 /*----------------------------------------------------------*/
 
-/* * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-} */
-
 /* apply a natural box layout model to all elements, but allowing components to change */
-html {
+*, *::before, *::after {
   box-sizing: border-box;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
 }
 
 section {
@@ -105,8 +95,8 @@ h1 {
 }
 
 .about-me {
-  height: 500px;
-  padding: 10px;
+  /* height: 500px; */
+  padding: 20px;
 }
 
 .title-section {
@@ -114,6 +104,7 @@ h1 {
   font-family: NeueMachina-Regular;
   text-align: center;
   padding: 15PX 0;
+  margin-bottom: 0;
 }
 
 .about-me .text-section {
@@ -122,13 +113,25 @@ h1 {
   text-align: justify;
 }
 
+.text-section {
+  margin-bottom: 0;
+}
+
+.contenedor {
+  margin: 20px 0;
+}
+
+.expand-btn {
+  appearance: none;
+}
+
 /*----------------------------------------------------------*/
 /*----------------------- EXPERIENCE -----------------------*/
 /*----------------------------------------------------------*/
 
 
 .experiencia {
-  padding: 40px 20px 60px 20px;
+  padding: 20px 20px 60px 20px;
   font-family: NeueMachina-Regular;
 }
 
@@ -233,12 +236,15 @@ h1 {
   }
 }
 
+/* hero principal: photo developer */
+
 @media (max-width: 768px) {
   .hero-principal h1 {
     margin: 10px 0;
   }
 }
 
+/* hero inferior: skills */
 
 @media (min-width: 768px) {
   .hero-inferior-imagen {
@@ -247,22 +253,101 @@ h1 {
 
 }
 
+/* animation  */
+
 @media (min-width: 280px) and (max-width: 715px) {
   .typed, .activity {
     display: none;
   }
 }
 
+/* meet me */
+
 @media (max-width: 445px) {
+  /* .about-me {
+    height: 300px;
+  }
+
   .contenedor {
-    overflow-y: scroll;
-    overflow-wrap: normal;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    line-clamp: 5;
+    overflow: hidden;
   }
 
   .text-section {
     margin: 0 10px;
   }
+
+  .contenedor:hover {
+    display: block;
+    overflow-y: scroll;
+    overflow-wrap: normal;
+  } */
+
+  .text-section {
+    /* display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5; */
+    --max-lines: 3;
+    --line-height: 1.4;
+    max-height: calc(var(--max-lines) * 1em * var(--line-height));
+    line-height: var(--line-height);
+
+    overflow: hidden;
+    position: relative;
+  }
+
+  .text-section:has(+ .expand-btn:not(:checked))::before {
+    content: "";
+    position: absolute;
+    height: calc(1em * var(--line-height));
+
+    width: 100%;
+    bottom: 0;
+    pointer-events: none;
+    background: linear-gradient(to bottom, #1b1b32, rgba(0, 0, 0, 0.3));
+  }
+
+  .expand-btn {
+    appearance: none;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 0.375rem;
+    color: #fff;
+    background-color: #000;
+    cursor: pointer;
+    margin-top: 20px;
+
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -0%);
+
+  }
+
+  .expand-btn:hover {
+    background-color: #7ade30;
+    color: #000;
+    font-weight: 600;
+
+  }
+
+  .expand-btn::before {
+    content: "Leer más";
+  }
+
+  .expand-btn:checked::before {
+    content: "Contraer";
+  }
+
+  .text-section:has(+ .expand-btn:checked) {
+    max-height: none;
+  }
 }
+
+/* experience */
 
 @media (min-width: 768px) and (max-width: 820px) {
 
