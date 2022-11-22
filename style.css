@@ -14,8 +14,34 @@ section {
   align-items: center;
 }
 
+.light-section {
+  color: #000;
+  background-color: #fff;
+}
+
+.title-section {
+  font-size: 2rem;
+  font-family: NeueMachina-Regular;
+  text-align: center;
+  padding: 15PX 0;
+  margin-bottom: 0;
+}
+
 h1 {
   font-size: 2rem;
+}
+
+.btn-info {
+  font-size: 1.1rem;
+  margin: 10px;
+}
+
+.text-black {
+  color: #000;
+}
+
+.text-white {
+  color: #fff;
 }
 
 @font-face {
@@ -99,14 +125,6 @@ h1 {
   padding: 20px;
 }
 
-.title-section {
-  font-size: 2rem;
-  font-family: NeueMachina-Regular;
-  text-align: center;
-  padding: 15PX 0;
-  margin-bottom: 0;
-}
-
 .about-me .text-section {
   max-width: 600px;
   font-family: NeueMachina-Regular;
@@ -131,13 +149,8 @@ h1 {
 
 
 .experiencia {
-  padding: 20px 20px 60px 20px;
+  padding: 20px 20px 20px 20px;
   font-family: NeueMachina-Regular;
-}
-
-.light-section {
-  color: #000;
-  background-color: #fff;
 }
 
 .experiencia-titulo {
@@ -190,8 +203,6 @@ h1 {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  /* text-align: justify;
-  word-spacing: 0; */
 
   /* clip-path: circle(50% at top left); */
   transition-property: clip-path, background-color;
@@ -218,7 +229,71 @@ h1 {
   color: #000;
 }
 
+/*----------------------------------------------------------*/
+/*------------------------ PROJECTS ------------------------*/
+/*----------------------------------------------------------*/
 
+.proyectos-recientes {
+  padding: 40px;
+}
+
+.seccion-descripcion {
+  font-size: 1.2rem;
+  color: #584e4e;
+}
+
+.proyectos-recientes img {
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10x;
+  display: block;
+  transition: all 0.2s ease;
+
+}
+
+.proyectos-contenedor {
+  padding-top: 60px;
+  margin-bottom: 40px;
+}
+
+.proyecto {
+  position: relative;
+}
+
+.overlay {
+  transition: all 0.2s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.overlay p {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.proyecto:hover img {
+  opacity: 0.2;
+}
+
+.proyecto:hover .overlay {
+  opacity: 1;
+}
+
+.overlay .iconos-contenedor {
+  display: flex;
+}
+
+.overlay i {
+  color: #000;
+  font-size: 60px;
+  margin: 10px;
+}
 
 /*----------------------------------------------------------*/
 /*---------------------- RESPONSIVE ------------------------*/
@@ -253,15 +328,13 @@ h1 {
 
 }
 
-/* animation  */
+/* animation hero */
 
 @media (min-width: 280px) and (max-width: 715px) {
   .typed, .activity {
     display: none;
   }
 }
-
-
 
 /* experience */
 
@@ -316,7 +389,6 @@ h1 {
   }
 }
 
-
 @media (min-width: 820px) and (max-width: 844px) {
 
   .experiencia {
@@ -368,27 +440,6 @@ h1 {
 /* meet me */
 
 @media (max-width: 584px) {
-  /* .about-me {
-    height: 300px;
-  }
-
-  .contenedor {
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 5;
-    line-clamp: 5;
-    overflow: hidden;
-  }
-
-  .text-section {
-    margin: 0 10px;
-  }
-
-  .contenedor:hover {
-    display: block;
-    overflow-y: scroll;
-    overflow-wrap: normal;
-  } */
 
   .text-section {
     /* display: -webkit-box;
@@ -448,5 +499,17 @@ h1 {
 
   .text-section:has(+ .expand-btn:checked) {
     max-height: none;
+  }
+}
+
+/* projects */
+
+@media screen and (max-width: 400px) {
+  .overlay p {
+    font-size: 18px;
+  }
+
+  .overlay i {
+    font-size: 40px;
   }
 }
