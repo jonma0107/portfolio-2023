@@ -149,7 +149,7 @@ h1 {
 
 
 .experiencia {
-  padding: 20px 20px 20px 20px;
+  padding: 20px;
   font-family: NeueMachina-Regular;
 }
 
@@ -234,7 +234,7 @@ h1 {
 /*----------------------------------------------------------*/
 
 .proyectos-recientes {
-  padding: 40px;
+  padding: 20px;
 }
 
 .seccion-descripcion {
@@ -293,6 +293,34 @@ h1 {
   color: #000;
   font-size: 60px;
   margin: 10px;
+}
+
+/*----------------------------------------------------------*/
+/*----------------------- CAROUSEL -------------------------*/
+/*----------------------------------------------------------*/
+.certificaciones {
+  padding: 20px;
+}
+
+.certificaciones .carousel {
+  max-width: 800px;
+}
+
+.carousel-item {
+  height: 700px;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  background-color: #7ade30;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  margin: auto;
+}
+
+.carousel-inner {
+  padding-top: 60px;
 }
 
 /*----------------------------------------------------------*/
@@ -511,5 +539,14 @@ h1 {
 
   .overlay i {
     font-size: 40px;
+  }
+}
+
+/* Carousel*/
+@media (max-width: 768px) {
+
+  .carousel-control-next,
+  .carousel-control-prev {
+    margin: 250px auto;
   }
 }
